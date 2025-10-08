@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Registration Successful{% endblock %}
+{% block content %}
+<div style="text-align: center; margin-top: 80px;">
+    <h1 style="color: #00adb5;">🎉 Registration Successful!</h1>
+    <p style="font-size: 18px;">You have successfully registered for the event.</p>
+    <div style="margin-top: 30px;">
+        <a href="{% url 'dashboard' %}" class="btn">Go to Dashboard</a>
+        <a href="{% url 'event_list' %}" class="btn" style="margin-left: 10px;">View More Events</a>
+    </div>
+</div>
+{% endblock %}
